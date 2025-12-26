@@ -1,0 +1,671 @@
+﻿@{
+    ViewData["Title"] = "Recipe Details";
+
+    // yemek adını dosya adına çevir
+    var imageName = ViewBag.RecipeName
+        .ToLower()
+        .Replace(" ", "")
+        .Replace(",", "")
+        .Replace("'", "");
+}
+
+<h2 class="recipe-title">@ViewBag.RecipeName</h2>
+
+<div class="recipe-detail-container">
+
+    <!-- SOL: FOTO -->
+    <div class="recipe-image">
+        <img src="/images/@(imageName).png" class="recipe-image"  />
+    </div>
+
+    <!-- SAĞ: TARİF -->
+    <div class="recipe-info">
+
+        @* IRAQ *@
+
+        @if (ViewBag.RecipeName == "Dolma")
+        {
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Grape leaves</li>
+                <li>Rice</li>
+                <li>Minced meat</li>
+                <li>Tomato paste & spices</li>
+            </ul>
+
+            <h4>Instructions</h4>
+            <p>
+                Stuff grape leaves with rice and meat mixture, arrange in a pot
+                and cook slowly until tender.
+            </p>
+        }
+
+        @if (ViewBag.RecipeName == "Masqouf")
+        {
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Fresh carp fish</li>
+                <li>Salt & lemon</li>
+            </ul>
+
+            <h4>Instructions</h4>
+            <p>
+                The fish is split open and grilled slowly over open fire.
+            </p>
+        }
+
+        @if (ViewBag.RecipeName == "Kubbe Saray")
+        {
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Rice flour</li>
+                <li>Minced meat</li>
+                <li>Spices</li>
+            </ul>
+
+            <h4>Instructions</h4>
+            <p>
+                Rice dough is filled with meat and cooked in sauce.
+            </p>
+        }
+
+        @if (ViewBag.RecipeName == "Quzi")
+        {
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Lamb</li>
+                <li>Rice</li>
+                <li>Nuts & spices</li>
+            </ul>
+
+            <h4>Instructions</h4>
+            <p>
+                Lamb is slow cooked and served over rice with nuts.
+            </p>
+        }
+
+        @if (ViewBag.RecipeName == "Biryani")
+        {
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Rice</li>
+                <li>Chicken or meat</li>
+                <li>Spices</li>
+            </ul>
+
+            <h4>Instructions</h4>
+            <p>
+                Rice is cooked with meat and aromatic spices.
+            </p>
+        }
+        @if (ViewBag.RecipeName == "Amba")
+        {
+            <h2>Amba</h2>
+            <ul>
+                <li>Mango</li>
+                <li>Vinegar</li>
+                <li>Spices</li>
+            </ul>
+            <p>Fermented mango sauce served with sandwiches and meals.</p>
+        }
+        @if (ViewBag.RecipeName == "EggplantSalad")
+        {
+            <h2>Eggplant Salad</h2>
+            <ul>
+                <li>Eggplant</li>
+                <li>Garlic</li>
+                <li>Olive oil</li>
+            </ul>
+            <p>Roasted eggplant mixed with garlic and olive oil.</p>
+        }
+
+        @if (ViewBag.RecipeName == "PickledCucumbers")
+        {
+            <h2>Pickled Cucumbers</h2>
+            <ul>
+                <li>Cucumbers</li>
+                <li>Vinegar</li>
+                <li>Water</li>
+                <li>Salt</li>
+                <li>Garlic</li>
+            </ul>
+            <p>Cucumbers are soaked in a mixure of vinegar, water, salt and garlic, then left to ferment until crisp and flavorful.</p>
+        }
+        @if (ViewBag.RecipeName == "PickledVegetable")
+        {
+            <h2>Pickled Vegetables</h2>
+            <ul>
+                <li>Cucumber</li>
+                <li>Carrot</li>
+                <li>Vinegar</li>
+            </ul>
+            <p>Vegetables preserved in vinegar and spices.</p>
+        }
+        @if (ViewBag.RecipeName == "Dehina")
+        {
+            <h2>Dehina</h2>
+            <ul>
+                <li>Tahini</li>
+                <li>Flour</li>
+                <li>Sugar</li>
+            </ul>
+            <p>Dense sesame-based Iraqi dessert.</p>
+        }
+        @if (ViewBag.RecipeName == "Zlabia")
+        {
+            <h2>Zlabia</h2>
+            <ul>
+                <li>Flour</li>
+                <li>Sugar syrup</li>
+            </ul>
+            <p>Fried dough soaked in syrup.</p>
+        }
+        @if (ViewBag.RecipeName == "Kleicha")
+        {
+            <h2>Kleicha</h2>
+            <ul>
+                <li>Flour</li>
+                <li>Date filling</li>
+            </ul>
+            <p>Traditional Iraqi filled cookies.</p>
+        }
+        @if (ViewBag.RecipeName == "Znoud")
+        {
+            <h2>Znoud</h2>
+            <ul>
+                <li>Phyllo dough</li>
+                <li>Cream</li>
+                <li>Syrup</li>
+            </ul>
+            <p>Fried rolls filled with cream and syrup.</p>
+        }
+        @if (ViewBag.RecipeName == "Zurda")
+        {
+            <h2>Zurda</h2>
+            <ul>
+                <li>Rice</li>
+                <li>Sugar</li>
+                <li>Saffron</li>
+            </ul>
+            <p>Sweet saffron rice dessert.</p>
+        }
+
+
+        @* SYRIA *@
+
+        @if (ViewBag.RecipeName == "Shish Barak")
+        {
+            <h2>Shish Barak</h2>
+            <ul>
+                <li>Dough</li>
+                <li>Minced meat</li>
+                <li>Yogurt</li>
+            </ul>
+            <p>Meat dumplings cooked in warm yogurt sauce.</p>
+        }
+        @if (ViewBag.RecipeName == "Falafel")
+        {
+            <h2>Falafel</h2>
+            <ul>
+                <li>Chickpeas</li>
+                <li>Garlic</li>
+                <li>Herbs</li>
+            </ul>
+            <p>Fry chickpea mixture until golden.</p>
+        }
+        @if (ViewBag.RecipeName == "Kibbeh")
+        {
+            <h2>Kibbeh</h2>
+            <ul>
+                <li>Bulgur</li>
+                <li>Minced meat</li>
+                <li>Onion</li>
+            </ul>
+            <p>Shape, stuff and fry or bake.</p>
+        }
+        @if (ViewBag.RecipeName == "Mujadara")
+        {
+            <h2>Mujadara</h2>
+            <ul>
+                <li>Lentils</li>
+                <li>Rice</li>
+                <li>Onion</li>
+            </ul>
+            <p>Cook lentils with rice, top with caramelized onions.</p>
+        }
+        @if (ViewBag.RecipeName == "Freekah")
+        {
+            <h2>Freekah</h2>
+            <ul>
+                <li>Freekeh wheat</li>
+                <li>Chicken</li>
+            </ul>
+            <p>Cook freekeh with chicken broth.</p>
+        }
+        @if (ViewBag.RecipeName == "Hummus")
+        {
+            <h2>Hummus</h2>
+            <ul>
+                <li>Chickpeas</li>
+                <li>Tahini</li>
+                <li>Lemon</li>
+            </ul>
+            <p>Blended chickpeas with tahini and lemon.</p>
+        }
+        @if (ViewBag.RecipeName == "Fatteh")
+        {
+            <h2>Fatteh</h2>
+            <ul>
+                <li>Bread</li>
+                <li>Yogurt</li>
+                <li>Chickpeas</li>
+            </ul>
+            <p>Layered bread with yogurt and chickpeas.</p>
+        }
+        @if (ViewBag.RecipeName == "Fattoush")
+        {
+            <h2>Fattoush</h2>
+            <ul>
+                <li>Vegetables</li>
+                <li>Fried bread</li>
+            </ul>
+            <p>Fresh salad with crispy bread.</p>
+        }
+        @if (ViewBag.RecipeName == "Muhammara")
+        {
+            <h2>Muhammara</h2>
+            <ul>
+                <li>Red pepper</li>
+                <li>Walnuts</li>
+            </ul>
+            <p>Spicy red pepper and walnut dip.</p>
+        }
+        @if (ViewBag.RecipeName == "Cheese Dessert")
+        {
+            <h2>Cheese Dessert</h2>
+            <ul>
+                <li>Cheese</li>
+                <li>Semolina</li>
+                <li>Sugar Syrup</li>
+            </ul>
+            <p>Soft cheese dessert coocked with semolina and soaked in sweet syrup.</p>
+
+        }
+        @if (ViewBag.RecipeName == "Mamoul")
+        {
+            <h2>Mamoul</h2>
+            <ul>
+                <li>Flour</li>
+                <li>Date or nut filling</li>
+            </ul>
+            <p>Filled cookies baked for special occasions.</p>
+        }
+        @if (ViewBag.RecipeName == "Namoura")
+        {
+            <h2>Namoura</h2>
+            <ul>
+                <li>Semolina</li>
+                <li>Syrup</li>
+            </ul>
+            <p>Sweet semolina cake soaked in syrup.</p>
+        }
+        @if (ViewBag.RecipeName == "Mabruma")
+        {
+            <h2>Mabruma</h2>
+            <ul>
+                <li>Phyllo dough</li>
+                <li>Pistachio</li>
+            </ul>
+            <p>Rolled pastry filled with pistachios.</p>
+        }
+        @if (ViewBag.RecipeName == "Madluqaa")
+        {
+            <h2>Madluqaa</h2>
+            <ul>
+                <li>Semolina</li>
+                <li>Cream</li>
+            </ul>
+            <p>Layered dessert with cream and syrup.</p>
+        }
+
+
+        @* JORDAN *@
+
+        @if (ViewBag.RecipeName == "Mansaf")
+        {
+            <h2>Mansaf</h2>
+            <ul>
+                <li>Lamb</li>
+                <li>Jameed yogurt</li>
+                <li>Rice</li>
+            </ul>
+            <p>Lamb cooked in fermented yogurt sauce, served over rice.</p>
+        }
+        @if (ViewBag.RecipeName == "Maqluba")
+        {
+            <h2>Maqluba</h2>
+            <ul>
+                <li>Rice</li>
+                <li>Vegetables</li>
+                <li>Chicken or meat</li>
+            </ul>
+            <p>Layered rice dish flipped upside down before serving.</p>
+        }
+        @if (ViewBag.RecipeName == "Kaakeel")
+        {
+            <h2>Kaakeel</h2>
+            <ul>
+                <li>Flour</li>
+                <li>Sugar</li>
+            </ul>
+            <p>Traditional Jordanian homemade bread.</p>
+        }
+        @if (ViewBag.RecipeName == "AlRshouf")
+        {
+            <h2>AlRshouf</h2>
+            <ul>
+                <li>Eggplant</li>
+                <li>Yogurt</li>
+            </ul>
+            <p>Eggplant cooked with yogurt sauce.</p>
+        }
+        @if (ViewBag.RecipeName == "Kabsa")
+        {
+            <h2>Kabsa</h2>
+            <ul>
+                <li>Rice</li>
+                <li>Chicken</li>
+                <li>Spices</li>
+            </ul>
+            <p>Spiced rice cooked with chicken.</p>
+        }
+        @if (ViewBag.RecipeName == "Daqous")
+        {
+            <h2>Daqous</h2>
+            <ul>
+                <li>Tomato</li>
+                <li>Garlic</li>
+                <li>Chili</li>
+            </ul>
+            <p>Spicy tomato dip served with meals.</p>
+        }
+        @if (ViewBag.RecipeName == "Mutabbal")
+        {
+            <h2>Mutabbal</h2>
+            <ul>
+                <li>Eggplant</li>
+                <li>Tahini</li>
+            </ul>
+            <p>Smoked eggplant dip with tahini.</p>
+        }
+
+        @if (ViewBag.RecipeName == "PickledOlive")
+        {
+            <h2>Pickled Olive</h2>
+            <ul>
+                <li>Olives</li>
+                <li>Salt</li>
+            </ul>
+            <p>Salted olives served as appetizer.</p>
+        }
+        @if (ViewBag.RecipeName == "PickledFaqous")
+        {
+            <h2>Pickled Faqous</h2>
+            <ul>
+                <li>Cucumber</li>
+                <li>Vinegar</li>
+            </ul>
+            <p>Pickled cucumbers with spices.</p>
+        }
+
+        @if (ViewBag.RecipeName == "Haitalia")
+        {
+            <h2>Haitalia</h2>
+            <ul>
+                <li>Milk</li>
+                <li>Cornstarch</li>
+            </ul>
+            <p>Milk pudding topped with syrup.</p>
+        }
+        @if (ViewBag.RecipeName == "Awame")
+        {
+            <h2>Awame</h2>
+            <ul>
+                <li>Dough</li>
+                <li>Syrup</li>
+            </ul>
+            <p>Fried dough balls soaked in syrup.</p>
+        }
+        @if (ViewBag.RecipeName == "Kreza")
+        {
+            <h2>Kreza</h2>
+            <ul>
+                <li>Cherries</li>
+                <li>Sugar</li>
+            </ul>
+            <p>Sweet cherry dessert.</p>
+        }
+        @if (ViewBag.RecipeName == "Kunafa")
+        {
+            <h2>Kunafa</h2>
+            <ul>
+                <li>Cheese</li>
+                <li>Kataifi dough</li>
+            </ul>
+            <p>Cheese pastry soaked in sugar syrup.</p>
+        }
+
+        @* PALESTINE *@
+
+        @if (ViewBag.RecipeName == "Musakhan")
+        {
+            <h2>Musakhan</h2>
+            <ul>
+                <li>Chicken</li>
+                <li>Onion</li>
+                <li>Sumac</li>
+            </ul>
+            <p>Roasted chicken with onions and sumac.</p>
+        }
+        @if (ViewBag.RecipeName == "Freekah")
+        {
+            <h2>Freekah</h2>
+            <ul>
+                <li>Freekeh wheat</li>
+                <li>Chicken</li>
+            </ul>
+            <p>Smoky wheat cooked with chicken broth.</p>
+        }
+        @if (ViewBag.RecipeName == "Maftul")
+        {
+            <h2>Maftul</h2>
+            <ul>
+                <li>Couscous pearls</li>
+                <li>Vegetables</li>
+            </ul>
+            <p>Steamed couscous served with vegetables.</p>
+        }
+        @if (ViewBag.RecipeName == "Matfia")
+        {
+            <h2>Matfia</h2>
+            <ul>
+                <li>Meat</li>
+                <li>Spices</li>
+            </ul>
+            <p>Slow cooked meat with spices.</p>
+        }
+        @if (ViewBag.RecipeName == "Manaaish")
+        {
+            <h2>Manaaish</h2>
+            <ul>
+                <li>Dough</li>
+                <li>Za’atar</li>
+            </ul>
+            <p>Flatbread baked with za’atar topping.</p>
+        }
+        @if (ViewBag.RecipeName == "Baba Ganouj")
+        {
+            <h2>Baba Ganouj</h2>
+            <ul>
+                <li>Eggplant</li>
+                <li>Tahini</li>
+            </ul>
+            <p>Smoked eggplant dip</p>
+        }
+        @if (ViewBag.RecipeName == "Samboosa")
+        {
+            <h2>Samboosa</h2>
+            <ul>
+                <li>Dough</li>
+                <li>Meat or cheese</li>
+            </ul>
+            <p>Stuffed pastries fried until crispy.</p>
+        }
+        @if (ViewBag.RecipeName == "Tahin Salad")
+        {
+            <h2>Tahini Salad</h2>
+            <ul>
+                <li>Tahini</li>
+                <li>Lemon</li>
+            </ul>
+            <p>Creamy tahini mixed with lemon juice.</p>
+        }
+        @if (ViewBag.RecipeName == "Taratour")
+        {
+            <h2>Taratour</h2>
+            <ul>
+                <li>Tahini</li>
+                <li>Garlic</li>
+            </ul>
+            <p>Garlic tahini sauce.</p>
+        }
+        @if (ViewBag.RecipeName == "Dahdah")
+        {
+            <h2>Dahdah</h2>
+            <ul>
+                <li>Flour</li>
+                <li>Syrup</li>
+            </ul>
+            <p>Fried dessert soaked in syrup.</p>
+        }
+        @if (ViewBag.RecipeName == "Hilbe")
+        {
+            <h2>Hilbe</h2>
+            <ul>
+                <li>Fenugreek</li>
+                <li>Sugar</li>
+            </ul>
+            <p>Traditional sweet made from fenugreek.</p>
+        }
+        @if (ViewBag.RecipeName == "Nabilsia")
+        {
+            <h2>Nabilsia</h2>
+            <ul>
+                <li>Cheese</li>
+                <li>Syrup</li>
+            </ul>
+            <p>Cheese dessert soaked in syrup.</p>
+        }
+        @if (ViewBag.RecipeName == "Zainab Fingers")
+        {
+            <h2>Zainab Fingers</h2>
+            <ul>
+                <li>Dough</li>
+                <li>Syrup</li>
+            </ul>
+            <p>Fried finger-shaped sweets.</p>
+        }
+
+        @* MOROCCO *@
+
+        @if (ViewBag.RecipeName == "Tajine")
+        {
+           <h2>Tajine</h2>
+           <p>Slow cooked meat with vegetables and Moroccan spices.</p>
+        }
+        @if (ViewBag.RecipeName == "Kuskus")
+        {
+           <h2>Kuskus</h2>
+           <p>Steamed couscous served with vegetables and chickpeas.</p>
+        }
+
+        @if (ViewBag.RecipeName == "Pastila")
+        {
+           <h2>Pastila</h2>
+           <p>Sweet and savory pastry filled with chicken and almonds.</p>
+        }
+
+        @if (ViewBag.RecipeName == "Roasted Chicken")
+        {
+           <h2>Roasted Chicken</h2>
+           <p>Oven roasted chicken marinated with Moroccan spices.</p>
+        }
+
+        @if (ViewBag.RecipeName == "Meat Prunes")
+        {
+           <h2>Meat with Prunes</h2>
+           <p>Slow cooked meat with sweet prunes and cinnamon.</p>
+        }
+
+       @if (ViewBag.RecipeName == "Kaab El Ghazal")
+       {
+           <h2>Kaab El Ghazal</h2>
+           <p>Almond filled pastry shaped like a crescent.</p>
+        }
+
+       @if (ViewBag.RecipeName == "Ghriba")
+        {
+           <h2>Ghriba</h2>
+           <p>Traditional Moroccan cracked cookies.</p>
+        }
+
+        @if (ViewBag.RecipeName == "Fqass")
+        {
+            <h2>Fqass</h2>
+            <p>Crunchy twice baked Moroccan biscuits.</p>
+        }
+
+        @if (ViewBag.RecipeName == "Shebbakia")
+        {
+            <h2>Shebbakia</h2>
+            <p>Fried sesame cookies dipped in honey.</p>
+        }
+
+        @if (ViewBag.RecipeName == "Jawhara")
+        {
+            <h2>Jawhara</h2>
+            <p>Layered pastry with cream and almonds.</p>
+        }
+
+        @if (ViewBag.RecipeName == "Harcha")
+        {
+            <h2>Harcha</h2>
+            <p>Pan cooked semolina bread.</p>
+        }
+
+        @if (ViewBag.RecipeName == "Msemmen")
+         {
+             <h2>Msemmen</h2>
+             <p>Layered flatbread cooked on a pan.</p>
+         }
+
+        @if (ViewBag.RecipeName == "Savory Briouats")
+         {
+             <h2>Savory Briouats</h2>
+             <p>Crispy stuffed pastries.</p>
+         }
+
+        @if (ViewBag.RecipeName == "Jarda Salad")
+        {
+             <h2>Jarda Salad</h2>
+             <p>Roasted eggplant salad with tomato and garlic.</p>
+        }
+        @if (ViewBag.RecipeName != null)
+        {
+            <a href="javascript:history.back()" class="btn btn-outline-secondary mt-4">
+                ← Go Back 
+            </a>
+        }
+
+    </div>
+</div>

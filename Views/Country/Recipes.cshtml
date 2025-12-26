@@ -1,0 +1,424 @@
+﻿@{
+    ViewData["Title"] = "Recipes";
+}
+
+<h2>@ViewBag.Country - @ViewBag.Category</h2>
+
+<div class="recipe-container">
+
+    @* IRAQ – MAIN DISHES *@
+    @if (ViewBag.Country == "Iraq" && ViewBag.Category == "Main Dishes")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Dolma">
+            <img src="/images/dolma.png" />
+            <p>Dolma</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Masqouf">
+            <img src="/images/masqouf.png" />
+            <p>Masqouf</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Kubbe Saray">
+            <img src="/images/kubbeSaray.png" />
+            <p>Kubbe Saray</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Quzi">
+            <img src="/images/quzi.png" />
+            <p>Quzi</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Biryani">
+            <img src="/images/biryani.png" />
+            <p>Biryani</p>
+        </a>
+    }
+
+    @* IRAQ – APPETIZERS *@
+    @if (ViewBag.Country == "Iraq" && ViewBag.Category == "Appetizers")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Amba">
+            <img src="/images/amba.png" />
+            <p>Amba</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=EggplantSalad">
+            <img src="/images/eggplantSalad.png" />
+            <p>Eggplant Salad</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=PickledVegetable">
+            <img src="/images/pickledVegetable.png" />
+            <p>Pickled Vegetables</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=PickledCucumbers">
+            <img src="/images/pickledCucumbers.png" />
+            <p>Pickled Cucumbers</p>
+        </a>
+    }
+
+    @* IRAQ – DESSERTS *@
+    @if (ViewBag.Country == "Iraq" && ViewBag.Category == "Desserts")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Dehina">
+            <img src="/images/dehina.png" />
+            <p>Dehina</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Zlabia">
+            <img src="/images/zlabia.png" />
+            <p>Zlabia</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Kleicha">
+            <img src="/images/kleicha.png" />
+            <p>Kleicha</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Znoud">
+            <img src="/images/znoud.png" />
+            <p>Znoud</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Zurda">
+            <img src="/images/zurda.png" />
+            <p>Zurda</p>
+        </a>
+    }
+    @* SYRIA - MAIN DISHES *@
+    @if (ViewBag.Country == "Syria" && ViewBag.Category == "Main Dishes")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Shish Barak">
+            <img src="/images/shishBarak.png" />
+            <p>Shish Barak</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Falafel">
+            <img src="/images/falafel.png" />
+            <p>Falafel</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Kibbeh">
+            <img src="/images/kibbeh.png" />
+            <p>Kibbeh</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Mujadara">
+            <img src="/images/mujadara.png" />
+            <p>Mujadara</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Freekah">
+            <img src="/images/freekah.png" />
+            <p>Freekah</p>
+        </a>
+    }
+
+
+    @*SYRIA - APPETIZERS *@
+    
+    @if (ViewBag.Country == "Syria" && ViewBag.Category == "Appetizers")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Hummus">
+            <img src="/images/hummus.png" />
+            <p>Hummus</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Fatteh">
+            <img src="/images/fatteh.png" />
+            <p>Fatteh</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Fattoush">
+            <img src="/images/fattoush.png" />
+            <p>Fattoush</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Muhammara">
+            <img src="/images/muhammara.png" />
+            <p>Muhammara</p>
+        </a>
+    }
+
+
+    @* SYRIA - DESSERTS *@
+
+    @if (ViewBag.Country == "Syria" && ViewBag.Category == "Desserts")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Cheese Dessert">
+            <img src="/images/cheeseDessert.png" />
+            <p>Cheese Dessert</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Mamoul">
+            <img src="/images/mamoul.png" />
+            <p>Mamoul</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Namoura">
+            <img src="/images/namoura.png" />
+            <p>Namoura</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Mabruma">
+            <img src="/images/mabruma.png" />
+            <p>Mabruma</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Madluqaa">
+            <img src="/images/madluqaa.png" />
+            <p>Madluqaa</p>
+        </a>
+    }
+
+
+    @* JORDAN - MAIN DISHES *@
+
+    @if (ViewBag.Country == "Jordan" && ViewBag.Category == "Main Dishes")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Mansaf">
+            <img src="/images/mansaf.png" />
+            <p>Mansaf</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Maqluba">
+            <img src="/images/maqluba.png" />
+            <p>Maqluba</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Kaakeel">
+            <img src="/images/kaakeel.png" />
+            <p>Kaakeel</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=AlRshouf">
+            <img src="/images/alrshouf.png" />
+            <p>Al Rshouf</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Kabsa">
+            <img src="/images/kabsa.png" />
+            <p>Kabsa</p>
+        </a>
+    }
+
+    @* JORDAN - APPETIZERS *@
+
+    @if (ViewBag.Country == "Jordan" && ViewBag.Category == "Appetizers")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Daqous">
+            <img src="/images/daqous.png" />
+            <p>Daqous</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Mutabbal">
+            <img src="/images/mutabbal.png" />
+            <p>Mutabbal</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=PickledOlive">
+            <img src="/images/pickledOlive.png" />
+            <p>Pickled Olive</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=PickledFaqous">
+            <img src="/images/pickledFaqous.png" />
+            <p>Pickled Faqous</p>
+        </a>
+    }
+
+    @* JORDAN - DESSERTS *@
+
+    @if (ViewBag.Country == "Jordan" && ViewBag.Category == "Desserts")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Haitalia">
+            <img src="/images/haitalia.png" />
+            <p>Haitalia</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Awame">
+            <img src="/images/awame.png" />
+            <p>Awame</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Kreza">
+            <img src="/images/kreza.png" />
+            <p>Kreza</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Kunafa">
+            <img src="/images/kunafa.png" />
+            <p>Kunafa</p>
+        </a>
+    }
+
+
+    @* PALESINE - MAIN DISHES *@
+
+    @if (ViewBag.Country == "Palestine" && ViewBag.Category == "Main Dishes")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Musakhan">
+            <img src="/images/musakhan.png" />
+            <p>Musakhan</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Freekah">
+            <img src="/images/freekah.png" />
+            <p>Freekah</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Maftul">
+            <img src="/images/maftul.png" />
+            <p>Maftul</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Matfia">
+            <img src="/images/matfia.png" />
+            <p>Matfia</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Manaaish">
+            <img src="/images/manaaish.png" />
+            <p>Manaaish</p>
+        </a>
+    }
+
+
+    @* PALESTINE - APPETIZERS *@
+    @if (ViewBag.Country == "Palestine" && ViewBag.Category == "Appetizers")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Baba Ganouj">
+            <img src="/images/babaGanouj.png" />
+            <p>Baba Ganouj</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Samboosa">
+            <img src="/images/samboosa.png" />
+            <p>Samboosa</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Tahin Salad">
+            <img src="/images/tahinSalad.png" />
+            <p>Tahin Salad</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Taratour">
+            <img src="/images/taratour.png" />
+            <p>Taratour</p>
+        </a>
+    }
+
+
+    @* PALESTINE - DESSERTS *@
+    
+    @if (ViewBag.Country == "Palestine" && ViewBag.Category == "Desserts")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Dahdah">
+            <img src="/images/dahdah.png" />
+            <p>Dahdah</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Hilbe">
+            <img src="/images/hilbe.png" />
+            <p>Hilbe</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Nabilsia">
+            <img src="/images/nabilsia.png" />
+            <p>Nabilsia</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Zainab Fingers">
+            <img src="/images/zainabFingers.png" />
+            <p>Zainab Fingers</p>
+        </a>
+    }
+
+    @* MOROCCO - MAIN DISHES *@
+
+    @if (ViewBag.Country == "Morocco" && ViewBag.Category == "Main Dishes")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Tajine">
+            <img src="/images/tajine.png" />
+            <p>Tajine</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Kuskus">
+            <img src="/images/kuskus.png" />
+            <p>Kuskus</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Pastila">
+            <img src="/images/pastila.png" />
+            <p>Pastila</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Roasted Chicken">
+            <img src="/images/roastedChicken.png" />
+            <p>Roasted Chicken</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Meat Prunes">
+            <img src="/images/meatPrunes.png" />
+            <p>Meat Prunes</p>
+        </a>
+    }
+
+    @* MOROCCO - APPETIZERS *@
+
+    @if (ViewBag.Country == "Morocco" && ViewBag.Category == "Appetizers")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Harcha">
+            <img src="/images/harcha.png" />
+            <p>Harcha</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Msemmen">
+            <img src="/images/msemmen.png" />
+            <p>Msemmen</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Savory Briouats">
+            <img src="/images/savoryBriouats.png" />
+            <p>Savory Briouats</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Jarda Salad">
+            <img src="/images/jardaSalad.png" />
+            <p>Jarda Salad</p>
+        </a>
+    }
+
+    @* MOROCCO - DESSERTS *@
+
+    @if (ViewBag.Country == "Morocco" && ViewBag.Category == "Desserts")
+    {
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Kaab El Ghazal">
+            <img src="/images/kaabElGhazal.png"/>
+            <p>Kaab El Ghazal</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Ghriba">
+            <img src="/images/ghriba.png" />
+            <p>Ghriba</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Fqass">
+            <img src="/images/fqass.png" />
+            <p>Fqass</p>
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Shebbakia">
+            <img src="/images/shebbakia.png" />
+            <p>Shebbakia</p>    
+        </a>
+
+        <a class="recipe-card" href="/Country/RecipeDetails?name=Jawhara">
+            <img src="/images/jawhara.png" />
+            <p>Jawhara</p>
+        </a>
+    }
+
+</div>

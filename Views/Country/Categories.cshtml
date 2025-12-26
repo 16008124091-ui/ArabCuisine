@@ -1,0 +1,23 @@
+﻿@{
+	ViewData["Title"] = "Categories";
+
+}
+
+<h2>@ViewBag.CountryName Cuisine</h2>
+
+<div class="category-container">
+	<a class="category-card"
+		href="/Country/Recipes?country=@ViewBag.CountryName&category=Main Dishes">
+		 Main Dishes
+	 </a>
+
+	<a class="category-card"
+		href="/Country/Recipes?country=@ViewBag.CountryName&category=Appetizers">
+		 Appetizers
+	 </a>
+
+	<a class="category-card"
+		href="/Country/Recipes?country=@ViewBag.CountryName&category=Desserts">
+		 Desserts
+	 </a>
+</div>
